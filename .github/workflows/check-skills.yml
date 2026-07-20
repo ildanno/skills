@@ -32,5 +32,5 @@ jobs:
                   fi
 
                   while IFS= read -r skill_file; do
-                      npx --yes skills@latest add "$(dirname "$skill_file")" --list
+                      npx --yes skills@latest add "./$(dirname "$skill_file")" --list
                   done <<< "$skill_files"

@@ -22,7 +22,8 @@ project or user directory.
 
 ## Available Skills
 
-No skills have been published yet.
+- [youtrack](skills/youtrack/SKILL.md): reads and comments on issues in a
+    configured YouTrack instance.
 
 ## Repository Layout
 
