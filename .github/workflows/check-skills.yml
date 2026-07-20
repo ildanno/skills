@@ -1,0 +1,36 @@
+name: Check skills
+
+on:
+    pull_request:
+    push:
+        branches:
+            - master
+
+permissions:
+    contents: read
+
+jobs:
+    discovery:
+        runs-on: ubuntu-latest
+        steps:
+            - name: Check out repository
+              uses: actions/checkout@v4
+
+            - name: Set up Node.js
+              uses: actions/setup-node@v4
+              with:
+                  node-version: "22.20"
+
+            - name: Verify skill discovery
+              shell: bash
+              run: |
+                  skill_files=$(find skills -mindepth 2 -maxdepth 2 -name SKILL.md -print)
+
+                  if [[ -z "$skill_files" ]]; then
+                      echo "No skills to validate yet."
+                      exit 0
+                  fi
+
+                  while IFS= read -r skill_file; do
+                      npx --yes skills@latest add "$(dirname "$skill_file")" --list
+                  done <<< "$skill_files"
