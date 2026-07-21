@@ -34,3 +34,6 @@ jobs:
                   while IFS= read -r skill_file; do
                       npx --yes skills@latest add "./$(dirname "$skill_file")" --list
                   done <<< "$skill_files"
+
+            - name: Test YouTrack helper
+              run: bash skills/youtrack/tests/test_youtrack.sh

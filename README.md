@@ -22,8 +22,8 @@ project or user directory.
 
 ## Available Skills
 
-- [youtrack](skills/youtrack/SKILL.md): reads and comments on issues in a
-    configured YouTrack instance.
+- [youtrack](skills/youtrack/SKILL.md): reads, creates, comments on, moves,
+    assigns, and links issues in a configured YouTrack instance.
 
 ## Repository Layout
 
