@@ -9,6 +9,9 @@
 5. Write concrete, ordered instructions that an agent can execute.
 6. Put optional executables, detailed documentation, and templates in
    `scripts/`, `references/`, and `assets/` respectively.
+7. Put human-facing installation, configuration, and usage instructions in an
+   optional `README.md` at the skill root. Keep `references/` focused on
+   material the agent loads while executing the skill.
 
 At minimum, every `SKILL.md` starts with:
 

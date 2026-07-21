@@ -29,8 +29,10 @@ custom field represented by `YOUTRACK_COLUMN_FIELD`, which defaults to `State`.
    `YOUTRACK_PROJECT` is the optional default project short name. It is required
    for a bare issue number and for `create` without `--project`. When a required
    value is missing, ask the user to set it directly in their terminal, then
-   stop. This step is complete when the command prints nothing or after the user
-   receives the missing variable names.
+    stop. If the token has not been created yet, direct the user to the setup
+    instructions in [`README.md`](README.md); never ask the user to paste the
+    token into chat. This step is complete when the command prints nothing or
+    after the user receives the missing variable names.
 3. For any write, state the exact pending change and obtain the user's explicit
    approval immediately before executing it. Include the issue IDs and all
    comment, column, assignee, project, summary, description, or link direction

@@ -22,7 +22,7 @@ project or user directory.
 
 ## Available Skills
 
-- [youtrack](skills/youtrack/SKILL.md): reads, creates, comments on, moves,
+- [youtrack](skills/youtrack/README.md): reads, creates, comments on, moves,
     assigns, and links issues in a configured YouTrack instance.
 
 ## Repository Layout
@@ -30,6 +30,7 @@ project or user directory.
 ```text
 skills/
 └── <skill-name>/
+    ├── README.md        # Optional human-facing setup and usage
     ├── SKILL.md
     ├── scripts/       # Optional executable helpers
     ├── references/    # Optional documentation loaded on demand
