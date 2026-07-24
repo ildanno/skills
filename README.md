@@ -22,6 +22,8 @@ project or user directory.
 
 ## Available Skills
 
+- [datadog](skills/datadog/README.md): analyzes logs and metrics and safely
+    manages dashboards, monitors, metric configuration, and log pipelines.
 - [figma](skills/figma/README.md): verifies a Figma personal access token,
     reads files, nodes, and comments, and adds or replies to comments.
 - [youtrack](skills/youtrack/README.md): reads, creates, comments on, moves,
