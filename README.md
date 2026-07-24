@@ -22,6 +22,8 @@ project or user directory.
 
 ## Available Skills
 
+- [figma](skills/figma/README.md): verifies a Figma personal access token,
+    reads files, nodes, and comments, and adds or replies to comments.
 - [youtrack](skills/youtrack/README.md): reads, creates, comments on, moves,
     assigns, and links issues in a configured YouTrack instance.
 
